@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Server</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(241, 248, 255);</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>34</number>
+      </property>
+      <property name="leftMargin">
+       <number>30</number>
+      </property>
+      <property name="topMargin">
+       <number>10</number>
+      </property>
+      <property name="rightMargin">
+       <number>30</number>
+      </property>
+      <property name="bottomMargin">
+       <number>10</number>
+      </property>
+      <item>
+       <widget class="QListWidget" name="listClients">
+        <property name="maximumSize">
+         <size>
+          <width>669</width>
+          <height>360</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#listClients {background-color: rgb(255, 255, 255);
+font: 11pt &quot;Arial&quot;;
+border-radius:5px;
+border:2px solid rgb(79, 164, 244);
+border-radius:10px;}</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="horizontalWidget" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>54</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>54</height>
+         </size>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <property name="spacing">
+          <number>160</number>
+         </property>
+         <property name="topMargin">
+          <number>1</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="button_scan">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>145</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Arial</family>
+             <pointsize>14</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(79, 164, 244);
+border-top-color: rgb(125, 128, 199);
+border-radius: 10px;
+color: rgb(255, 255, 255);
+font: 75 14pt &quot;Arial&quot;;}
+QPushButton:hover{
+background-color: rgb(200, 227, 246);
+border-radius: 15px;
+color: rgb(79, 164, 244);
+font: 75 14pt &quot;Arial&quot;;
+border:2px solid rgb(79, 164, 244);
+border-radius:10px;</string>
+           </property>
+           <property name="text">
+            <string>Scan</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="button_broadcast">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>145</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(79, 164, 244);
+border-top-color: rgb(125, 128, 199);
+border-radius: 10px;
+color: rgb(255, 255, 255);
+font: 75 14pt &quot;Arial&quot;;}
+QPushButton:hover{
+background-color: rgb(200, 227, 246);
+border-radius: 15px;
+color: rgb(79, 164, 244);
+font: 75 14pt &quot;Arial&quot;;
+border:2px solid rgb(79, 164, 244);
+border-radius:10px;</string>
+           </property>
+           <property name="text">
+            <string>BroadCast</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
