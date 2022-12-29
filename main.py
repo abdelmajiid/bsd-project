@@ -63,10 +63,9 @@ class QCustomQWidget (QWidget):
 
     def communicate(self, msg1, msg2):
         print("You have chose " + msg1 + " for " + msg2)
-        self.close()
         self.comm_window = Communications()
         self.comm_window.show()
-        self.close()
+        MainWindow.close()
 
     def to_client_details(self, name):
         print("Hello " + name)
